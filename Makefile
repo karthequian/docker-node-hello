@@ -2,13 +2,13 @@ install:
 	npm install
 
 build:
-	docker build -t gasi/centos-node-hello .
+	docker build -t karthequian/centos-node-hello .
 
 run:
 	node index.js
 
 run-container:
-	docker run -p 49160:8080 -d gasi/centos-node-hello 
+	docker run -p 49160:8080 -d karthequian/centos-node-hello 
 
 test:
 	curl localhost
